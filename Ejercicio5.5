@@ -1,0 +1,22 @@
+Algoritmo Ejercicio
+	Definir n, num, x, cont Como Entero
+	Escribir "Ingresar un numero" 
+	Leer n
+	num = 0
+	Mientras n > 0 Hacer
+		num = num + 1 
+		x = 1
+		cont = 0 
+		Mientras x <= num Hacer
+			si num mod x == 0 Entonces
+				cont = cont + 1 
+			FinSi
+			x = x + 1
+		Fin Mientras
+		si cont == 2 Entonces
+			Escribir "El numero " , num, " es primo"
+			n = n - 1
+		FinSi
+	Fin Mientras
+	
+FinAlgoritmo

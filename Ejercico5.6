@@ -1,0 +1,24 @@
+Algoritmo Ejercico
+	Definir n, x , reprobado Como Entero
+	Definir cali, suma Como Real
+	Escribir " Ingresa el numero de calificaciones " 
+	Leer n
+	x = 1
+	suma = 0
+	reprobado = 0
+	aprobado = 0
+	Mientras x <= n Hacer
+		Escribir "Ingresa la calificacion ", x 
+		Leer cali
+		suma = suma + cali
+		si cali < 6 Entonces
+			reprobado = reprobado + 1 
+		SiNo
+			aprobado = aprobado + 1
+		FinSi
+		x = x + 1
+	Fin Mientras
+	Escribir "El promedio de calificaciones es:", suma / n
+	Escribir "Reprobaste ", reprobado," calificaciones "
+	Escribir "Aprobaste ", aprobado," calificaciones"
+FinAlgoritmo
